@@ -1,15 +1,11 @@
-# Elysia with Bun runtime
+# Elysia example app
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
-```bash
-bun create elysia ./elysia-example
-```
+## 使い方
 
-## Development
-To start the development server run:
-```bash
-bun run dev
-```
+1. `bun run server/main.ts`
+2. `bun run client/main.ts your-name`+
 
-Open http://localhost:3000/ with your browser to see the result.
+## 型の確認の仕方
+
+- エディターで見る
+- `bunx tsc`
