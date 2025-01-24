@@ -11,7 +11,7 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@types/bun": "latest"
   },
   "module": "src/index.js"
 }

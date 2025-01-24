@@ -2,9 +2,15 @@ import { Elysia, t } from "elysia";
 
 const users: { id: number; name: string }[] = [];
 let id = 0;
+
 const app = new Elysia()
-	.get("/", () => "Hello Elysia")
+	.get("/", "Hello Elysia!")
 	.get("/users", () => users)
+	.get("/user/:id", ({ params: { id } }) => id, {
+		params: t.Object({
+			id: t.Numeric(),
+		}),
+	})
 	.post(
 		"/users",
 		({ body: { name } }) => {
